@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Drawing</title>
+
+    <style>
+        body {
+            background-color: #F2E8D5; 
+            margin: 20px;
+        }
+
+        /* Put blocks and image side by side */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        } 
+
+        /* Colored blocks */
+        .blocks {
+            position: relative;
+            width: 460px;
+            height: 700px;
+            flex-shrink: 0;
+        }
+
+        .block {
+            position: absolute;
+        }
+
+        #block1 {
+            width: 210px;
+            height: 400px;
+            background-color: #E6CC3F;
+            top: 150px;
+            left: 0;
+        }
+
+        #block2 {
+            width: 140px;
+            height: 180px;
+            background-color: #FF261C;
+            top: 150px;
+            left: 220px;
+        }
+
+        #block3 {
+            width: 140px;
+            height: 210px;
+            background-color: #A0CE00;
+            top: 340px;
+            left: 220px;
+        }
+
+        #block4 {
+            width: 210px;
+            height: 90px;
+            background-color: #76A095;
+            top: 560px;
+            left: 0;
+        }
+
+        #block5 {
+            width: 140px;
+            height: 90px;
+            background-color: #CF6C89;
+            top: 560px;
+            left: 220px;
+        }
+
+        #block6 {
+        background-color: #3F3F3F;
+        width: 305px;
+            height: 165px;
+            top: 700px;
+            left: 900px; 
+}
+
+
+    #block7 {
+        background-color: #FFF176; 
+        width: 145px;
+            height: 117.5px;
+            top: 700px;
+            left: 1215px; 
+}
+
+    #block8 {
+        background-color: #E49A82; 
+        width: 145px;
+            height: 327.5px;
+            top: 830px;
+            left: 1215px; 
+}
+
+   #block9 {
+        background-color: #898B7D;
+        width: 305px;
+            height: 120px;
+            top: 875px;
+            left: 900px; 
+}
+
+  #block10 {
+        background-color: #61A3AD;
+        width: 305px;
+    height: 150px;
+            top: 1005px;
+            left: 900px; 
+}
+
+
+ #block11{
+width: 462.5px;
+    height: 128px;
+    background-color: #96668C;
+     top: 1165px;
+            left: 900px; 
+}
+
+
+#block12{
+width: 147.5px;
+    height: 119px; 
+    background-color: #E00000; 
+     top: 1400px;
+            left: 200px; 
+}
+
+#block13{
+width: 147.5px;
+    height: 119px; 
+    background-color: #608064;
+     top: 1530px;
+            left: 200px; 
+}
+
+#block13{
+width: 147.5px;
+    height: 119px; 
+    background-color: #608064;
+     top: 1530px;
+            left: 200px; 
+}
+
+#block14{
+width: 147.5px;
+    height: 91px; 
+    background-color:  #FFC21A;
+     top: 1660px;
+            left: 200px; 
+}
+
+#block15{
+width: 147.5px;
+    height: 67px; 
+    background-color: #00516A;
+     top: 1765px;
+            left: 200px; 
+}
+
+#block16{
+width: 148px;
+    height: 433px; 
+    background-color: #FF8000;
+     top: 1400px;
+            left: 360px; 
+}
+
+#block17{
+width: 128px;
+    height: 527px; 
+    background-color: #292827; 
+     top: 2000px;
+            left: 800px; 
+}
+ 
+#block18{
+width: 201px;
+    height: 191px; 
+    background-color: #B63F2E;
+     top: 2000px;
+            left: 940px; 
+}
+
+
+#block19 {
+    position: absolute;
+    width: 201px;
+    height: 178px;
+    background-color: #D7192B;
+    top: 2205px;
+    left: 940px;
+}
+
+#block20 {
+    position: absolute;
+    width: 201px;
+    height: 134px;
+    background-color: #2D332F;
+    top: 2395px;
+    left: 940px;
+}
+
+#block21 {
+    position: absolute;
+    width: 135px;
+    height: 374px;
+    background-color: #FF443C;
+    top: 2000px;
+    left: 1155px;
+
+}
+
+#block22 {
+    position: absolute;
+    width: 136px;
+    height: 145px;
+    background-color: #91A287;
+    top: 2384px;
+    left: 1155px;
+}
+
+#block23 {
+    position: absolute;
+    width: 145px;
+    height: 255px;
+    background-color: #85899F;
+    top: 2600px;
+    left: 240px;
+}
+
+#block24 {
+    position: absolute;
+    width: 145px;
+    height: 250px;
+    background-color: #10323A;
+    top: 2870px;
+    left: 240px;
+
+}
+
+
+#block25 {
+    position: absolute;
+    width: 280px;
+    height: 520px;
+    background-color: #27488F;
+    top: 2600px;
+    left: 400px;
+}
+
+#block26 {
+    position: absolute;
+    width: 440px;
+    height: 80px;
+    background-color: #25AB65;
+    top: 3135px;
+    left: 240px;
+}
+
+#block27 {
+    position: absolute;
+    width: 440px;
+    height: 140px;
+    background-color: #FF7F0E;
+    top: 3230px;
+    left: 240px;
+}
+
+#block28 {
+    position: absolute;
+    width: 145px;
+    height: 600px;
+    background-color: #B0000B;
+    top: 3400px;
+    left: 940px;
+}
+
+#block29 {
+    position: absolute;
+    width: 245px;
+    height: 253px;
+    background-color: #FF5000;
+    top: 3400px;
+    left: 1100px;
+}
+
+#block30 {
+    position: absolute;
+    width: 245px;
+    height: 200px;
+    background-color: #00A69C;
+    top: 3660px;
+    left: 1100px;
+}
+
+#block31 {
+    position: absolute;
+    width: 245px;
+    height: 135px;
+    background-color: #3CAF59;
+    top: 3867px;
+    left: 1100px;
+}
+
+#block32 {
+    position: absolute;
+    width: 145px;
+    height: 600px;
+    background-color: #F2B500;
+    top: 3400px;
+    left: 1355px;
+}
+
+#photo1 {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    top: 150px;
+    left: 360px;
+    z-index: 2;
+}
+
+#photo2 {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    top: 700px;
+    left: 720px;
+    z-index: 4;
+}
+
+
+#photo3 {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    top: 1400px;
+    left: 510px;
+    z-index: 4;
+}
+  
+
+#photo4 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 2000px;
+    left: 500px;
+    
+}
+
+
+
+
+#photo5 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 2600px;
+    left: 680px;
+    
+}
+    
+#photo6 {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 3400px;
+    left: 690px;
+    
+}
+
+
+
+    </style> 
+</head>
+
+<body>
+
+    <div class="container">
+
+
+<div class="blocks">
+
+    <img
+        id="photo1"
+        src="poster1930.jpg"
+        alt="1930s"
+    >
+
+    <img
+    id="photo2"
+    src="1930s.jpg"
+    alt="1930s poster, second image"
+>
+
+ <img
+    id="photo3"
+    src="poster1950.jpg"
+    alt="1950s"
+>
+
+ <img
+    id="photo4"
+    src="poster1960.jpg"
+    alt="1960s"
+>
+
+ <img
+    id="photo5"
+    src="1980s.jpg"
+    alt="1980s"
+>
+
+<img
+    id="photo6"
+    src="1990s.jpg"
+    alt="1990s"
+>
+
+
+
+    <div id="block1" class="block"></div>
+    <div id="block2" class="block"></div>
+
+
+     
+
+
+        <div class="blocks">
+            <div id="block1" class="block"></div>
+            <div id="block2" class="block"></div>
+            <div id="block3" class="block"></div>
+            <div id="block4" class="block"></div>
+            <div id="block5" class="block"></div>
+             <div id="block6" class="block"></div>
+             <div id="block7" class="block"></div>
+             <div id="block8" class="block"></div>
+             <div id="block9" class="block"></div>
+             <div id="block10" class="block"></div>
+              <div id="block11" class="block"></div>
+               <div id="block12" class="block"></div>
+               <div id="block13" class="block"></div>
+                <div id="block14" class="block"></div>
+                <div id="block15" class="block"></div>
+                  <div id="block16" class="block"></div>
+                  <div id="block17" class="block"></div>
+                   <div id="block18" class="block"></div>
+                    <div id="block19" class="block"></div>
+                    <div id="block20" class="block"></div>
+                    <div id="block21" class="block"></div>
+                     <div id="block22" class="block"></div>
+                     <div id="block23" class="block"></div>
+                      <div id="block24" class="block"></div>
+                      <div id="block25" class="block"></div>
+                      <div id="block26" class="block"></div>
+                       <div id="block27" class="block"></div>
+                       <div id="block28" class="block"></div>
+                      <div id="block29" class="block"></div>
+                       <div id="block30" class="block"></div>
+                       <div id="block31" class="block"></div>
+                      <div id="block32" class="block"></div>
+                      
+
+
+
+                  
+
+        </div>
+
+       
+
+    </div>
+
+</body>
+</html>
+
